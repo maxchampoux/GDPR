@@ -57,7 +57,7 @@ https://api.mailjet.com/v3/REST/contact/{contact_email}
 } 
 ```
 
-> If the contact is present in you account, the API will return the contact resource, otherwise you will retrieve a null object.
+> If the contact is present in your account, the API will return the contact resource, otherwise you will retrieve a null object.
 > Save the contact ID - you will need it to complete the deletion.
 
 
