@@ -27,8 +27,8 @@ Use `GET /v3/REST/contact/{contact_email}` to proceed it.
 
 ```json 
 curl -s -X GET \
---user &quot;$MJ\_APIKEY\_PUBLIC:$MJ\_APIKEY\_PRIVATE&quot; \
-https://api.mailjet.com/v3/REST/contact/{contact\_email} 
+--user "$MJ_APIKEY_PUBLIC:$MJ_APIKEY_PRIVATE" \
+https://api.mailjet.com/v3/REST/contact/{contact_email}
 ```
 
 > API response:
@@ -69,8 +69,8 @@ When deletion is successful, the API will return a `200 OK` status. Any other re
 > API request:
 ```json 
 curl -s -X DELETE \
---user &quot;$MJ\_APIKEY\_PUBLIC:$MJ\_APIKEY\_PRIVATE&quot; \
-https://api.mailjet.com/v4/contacts/{contact\_ID} \ 
+--user "$MJ_APIKEY_PUBLIC:$MJ_APIKEY_PRIVATE" \
+https://api.mailjet.com/v4/contacts/{contact_ID} \
 ```
 
 **Note:** Contact details are immediately anonymized and all records will be deleted after 30 days. This process cannot be reversed. The anonymized contact will retain its contact ID and general configuration settings until it is removed when the 30-day period ends.
