@@ -4,7 +4,7 @@
 * [Identify usage of a specific contact in my account](#gdpr-retrieve-contact)
 * [Proceed deletion](#gdpr-delete-contact)
 
-## Overview
+## Overview <a id="gdpr-overview"></a>
 
 Under the European Union's General Data Protection Regulation (GDPR), recipients in your Mailjet contacts database have the right to request that you delete all their personal data stored on your end. In such cases, the GDPR requires the permanent removal of their contact record from your database, including contact properties, email tracking history and other engagement data. You’ll typically need to respond to these requests within 30 days. 
 
@@ -17,7 +17,7 @@ You must complete the following steps to successfully delete a contact:
 2. Save the Mailjet `{contact_ID}` related to this recipient.
 3. Proceed with the deletion using the `{contact_ID}` you retrieved.
 
-## Identify usage of a specific contact in my account 
+## Identify usage of a specific contact in my account <a id="gdpr-retrieve-contact"></a>
 
 To delete a contact, you must first identify its presence in the contact database of your account.
 
@@ -61,7 +61,7 @@ https://api.mailjet.com/v3/REST/contact/{contact_email}
 > Save the contact ID - you will need it to complete the deletion.
 
 
-## Proceed deletion
+## Proceed deletion <a id="gdpr-delete-contact"></a>
 
 Use the {contact_ID} to DELETE a given contact with /v4/contacts/{contact_ID} endpoint. 
 When deletion is successful, the API will return a `200 OK` status. Any other response will indicate that the deletion was not successfully processed.
